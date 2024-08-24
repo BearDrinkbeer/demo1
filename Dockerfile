@@ -1,5 +1,5 @@
 # 使用官方的 OpenJDK 镜像作为基础镜像
-FROM adoptopenjdk/openjdk8
+FROM mritd/openjdk11
 
 # 将应用的 JAR 文件复制到镜像中
 ARG JAR_FILE=target/*.jar
