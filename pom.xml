@@ -38,6 +38,12 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+<repositories>
+    <repository>
+        <id>aliyun-maven</id>
+        <url>https://maven.aliyun.com/repository/public</url>
+    </repository>
+</repositories>
 
     <build>
         <plugins>
