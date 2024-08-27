@@ -14,7 +14,9 @@ spec:
     spec:
       containers:
         - name: springboot-demo
-          image: your-docker-image:latest
+          image: exceptionbeer/demo1:latest
+      imagePullSecrets:
+        - name: myregistrykey
           ports:
             - containerPort: 8080
           livenessProbe:
