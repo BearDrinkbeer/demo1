@@ -15,8 +15,6 @@ spec:
       containers:
         - name: springboot-demo
           image: exceptionbeer/demo1:latest
-      imagePullSecrets:
-        - name: myregistrykey
           ports:
             - containerPort: 8080
           livenessProbe:
@@ -31,3 +29,5 @@ spec:
               port: 8080
             initialDelaySeconds: 30
             periodSeconds: 10
+      imagePullSecrets:
+        - name: myregistrykey
